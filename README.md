@@ -13,4 +13,4 @@ uv (for dependency and environment management)
 git available on your PATH
 
 USAGE
-uv run autograde <repository-url>
+uv run autograde '<repository-url>'
