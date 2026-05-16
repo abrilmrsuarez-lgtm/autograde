@@ -93,7 +93,7 @@ class RepositoryValidator:
                 text=True,
                 timeout=10,
             )
-            return result.returncode == 0 and result.stdout.strip()
+            return result.returncode == 0 and bool(result.stdout.strip())
         except Exception:
             return False
 
@@ -111,7 +111,7 @@ class RepositoryValidator:
                 text=True,
                 timeout=10,
             )
-            return result.returncode == 0 and result.stdout.strip()
+            return result.returncode == 0 and bool(result.stdout.strip())
         except Exception:
             return False
 
